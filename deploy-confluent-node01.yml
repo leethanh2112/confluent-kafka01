@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: confluent-kaf01-monitor
+  name: confluent-kafka01-monitor
   namespace: confluent
 spec:
   ports:
@@ -14,7 +14,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: confluent-kaf01
+  name: confluent-kafka01
   namespace: confluent
 spec:
   type: LoadBalancer
@@ -51,6 +51,9 @@ spec:
         - containerPort: 9092
         - containerPort: 9090
         - containerPort: 10998
+        env:
+        - name: KAFKA_ZOOKEEPER_CONNECT
+          value: "confluent-zoo01:2181,confluent-zoo02:2181,confluent-zoo03:2181"
 
 
 
