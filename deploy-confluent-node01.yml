@@ -55,7 +55,7 @@ spec:
         - name: KAFKA_ZOOKEEPER_CONNECT
           value: "confluent-zoo01:2181,confluent-zoo02:2181,confluent-zoo03:2181"
         - name: KAFKA_ADVERTISED_LISTENERS
-          value: "10.0.15.101:30061"
+          value: "confluent-kafka01:9092"
 
 
 
