@@ -9,7 +9,7 @@ spec:
     port: 10998
     protocol: TCP 
   selector:
-    app: confluent-node01
+    app: confluent-kafka01
 ---
 apiVersion: v1
 kind: Service
@@ -26,27 +26,27 @@ spec:
       nodePort: 30061
       protocol: TCP
   selector:
-    app: confluent-node01
+    app: confluent-kafka01
 ---
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: confluent-node01
+  name: confluent-kafka01
   namespace: confluent
 spec:
   selector:
     matchLabels:
-      app: confluent-kaf01
+      app: confluent-kafka01
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: confluent-kaf01
+        app: confluent-kafka01
     spec:
       containers:
-      - name: confluent-kaf01
-        image: docker.registry.local:5000/confluent-kaf01:v1.${BUILD_NUMBER}
+      - name: confluent-kafka01
+        image: docker.registry.local:5000/confluent-kafka01:v1.${BUILD_NUMBER}
         ports:
         - containerPort: 9092
         - containerPort: 9090
