@@ -109,7 +109,7 @@ spec:
         - name: KAFKA_sasl_enabled_mechanisms
           value: "PLAIN"
         - name: KAFKA_sasl_mechanism_inter_broker_protocol
-          value: "PLAIN"	
+          value: "PLAIN"
         - name: KAFKA_cruise_control_metrics_reporter_sasl_mechanism
           value: "PLAIN"	
         - name: KAFKA_cruise_control_metrics_reporter_sasl_jaas_config
