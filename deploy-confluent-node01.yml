@@ -105,7 +105,7 @@ spec:
         - name: KAFKA_cruise_control_metrics_reporter_ssl_keystore_password
           value: "confluent"
         - name: KAFKA_cruise_control_metrics_reporter_ssl_key_password
-          value: "confluent"	
+          value: "confluent"
         - name: KAFKA_sasl_enabled_mechanisms
           value: "PLAIN"
         - name: KAFKA_sasl_mechanism_inter_broker_protocol
