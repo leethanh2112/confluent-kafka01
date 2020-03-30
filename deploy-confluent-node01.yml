@@ -111,7 +111,7 @@ spec:
         - name: KAFKA_sasl_mechanism_inter_broker_protocol
           value: "PLAIN"
         - name: KAFKA_cruise_control_metrics_reporter_sasl_mechanism
-          value: "PLAIN"	
+          value: "PLAIN"
         - name: KAFKA_cruise_control_metrics_reporter_sasl_jaas_config
           value: "org.apache.kafka.common.security.plain.PlainLoginModule required username="client" password="client-secret""
         - name: KAFKA_confluent_support_metrics_enable
