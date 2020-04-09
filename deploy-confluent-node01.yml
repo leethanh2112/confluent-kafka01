@@ -113,11 +113,11 @@ spec:
         - name: KAFKA_cruise_control_metrics_reporter_sasl_mechanism
           value: "PLAIN"
         - name: KAFKA_cruise_control_metrics_reporter_sasl_jaas_config
-          value: "org.apache.kafka.common.security.plain.PlainLoginModule required username="client" password="client-secret""
+          value: "org.apache.kafka.common.security.plain.PlainLoginModule required username=client password=client-secret"
         - name: KAFKA_confluent_support_metrics_enable
           value: "false"
         - name: KAFKA_confluent_support_customer_id
-          value: "anonymous"	  
+          value: "anonymous"
 
 
 
